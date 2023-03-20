@@ -20,12 +20,12 @@ class MockNewsRepository implements AbstractNewsRepository {
 
   @override
   Future<List<Article>> getFeaturedArticles() async {
-    List<Article> featured = _mockArticles.toList();
+    List<Article> featured = [];
     List<Article> buffer = await getLatestArticles();
     _mockArticles.forEach((element) {
-      if (buffer.contains(element))
+      if (!buffer.contains(element))
         {
-          featured.removeAt(_mockArticles.indexOf(element));
+          featured.add(element);
         }
     });
     return featured;
@@ -64,6 +64,138 @@ Due to Google's efforts to maintain a “safe ads ecosystem” for its advertise
 Regrettably, this is beyond our control.  
 To continue to enjoy ForestVPN without interruptions, please upgrade to our Premium version.''',
   ),
+  Article(
+    id: '1108389a-b3db-11ec-b909-0242ac120002',
+    title: 'We are processing your request...',
+    publicationDate: DateTime.now().subtract(const Duration(days: 1)),
+    imageUrl: 'https://i.ibb.co/Jk8FMMp/unsplash-Oqtaf-YT5k-Tw.jpg',
+    description: '''Please excuse the interruption.  
+Due to Google's efforts to maintain a “safe ads ecosystem” for its advertisers, publishers and users from fraud and bad experiences, Google has placed restrictions on our ad serving that limit our ability to provide free VPN services. 
+Regrettably, this is beyond our control.  
+To continue to enjoy ForestVPN without interruptions, please upgrade to our Premium version.''',
+  ),Article(
+    id: '1108389a-b3db-11ec-b909-0242ac120002',
+    title: 'We are processing your request...',
+    publicationDate: DateTime.now().subtract(const Duration(days: 1)),
+    imageUrl: 'https://i.ibb.co/Jk8FMMp/unsplash-Oqtaf-YT5k-Tw.jpg',
+    description: '''Please excuse the interruption.  
+Due to Google's efforts to maintain a “safe ads ecosystem” for its advertisers, publishers and users from fraud and bad experiences, Google has placed restrictions on our ad serving that limit our ability to provide free VPN services. 
+Regrettably, this is beyond our control.  
+To continue to enjoy ForestVPN without interruptions, please upgrade to our Premium version.''',
+  ),Article(
+    id: '1108389a-b3db-11ec-b909-0242ac120002',
+    title: 'We are processing your request...',
+    publicationDate: DateTime.now().subtract(const Duration(days: 1)),
+    imageUrl: 'https://i.ibb.co/Jk8FMMp/unsplash-Oqtaf-YT5k-Tw.jpg',
+    description: '''Please excuse the interruption.  
+Due to Google's efforts to maintain a “safe ads ecosystem” for its advertisers, publishers and users from fraud and bad experiences, Google has placed restrictions on our ad serving that limit our ability to provide free VPN services. 
+Regrettably, this is beyond our control.  
+To continue to enjoy ForestVPN without interruptions, please upgrade to our Premium version.''',
+  ),
+  Article(
+    id: '1108389a-b3db-11ec-b909-0242ac120002',
+    title: 'We are processing your request...',
+    publicationDate: DateTime.now().subtract(const Duration(days: 1)),
+    imageUrl: 'https://i.ibb.co/Jk8FMMp/unsplash-Oqtaf-YT5k-Tw.jpg',
+    description: '''Please excuse the interruption.  
+Due to Google's efforts to maintain a “safe ads ecosystem” for its advertisers, publishers and users from fraud and bad experiences, Google has placed restrictions on our ad serving that limit our ability to provide free VPN services. 
+Regrettably, this is beyond our control.  
+To continue to enjoy ForestVPN without interruptions, please upgrade to our Premium version.''',
+  ),
+  Article(
+    id: '1108389a-b3db-11ec-b909-0242ac120002',
+    title: 'We are processing your request...',
+    publicationDate: DateTime.now().subtract(const Duration(days: 1)),
+    imageUrl: 'https://i.ibb.co/Jk8FMMp/unsplash-Oqtaf-YT5k-Tw.jpg',
+    description: '''Please excuse the interruption.  
+Due to Google's efforts to maintain a “safe ads ecosystem” for its advertisers, publishers and users from fraud and bad experiences, Google has placed restrictions on our ad serving that limit our ability to provide free VPN services. 
+Regrettably, this is beyond our control.  
+To continue to enjoy ForestVPN without interruptions, please upgrade to our Premium version.''',
+  ),Article(
+    id: '1108389a-b3db-11ec-b909-0242ac120002',
+    title: 'We are processing your request...',
+    publicationDate: DateTime.now().subtract(const Duration(days: 1)),
+    imageUrl: 'https://i.ibb.co/Jk8FMMp/unsplash-Oqtaf-YT5k-Tw.jpg',
+    description: '''Please excuse the interruption.  
+Due to Google's efforts to maintain a “safe ads ecosystem” for its advertisers, publishers and users from fraud and bad experiences, Google has placed restrictions on our ad serving that limit our ability to provide free VPN services. 
+Regrettably, this is beyond our control.  
+To continue to enjoy ForestVPN without interruptions, please upgrade to our Premium version.''',
+  ),Article(
+    id: '1108389a-b3db-11ec-b909-0242ac120002',
+    title: 'We are processing your request...',
+    publicationDate: DateTime.now().subtract(const Duration(days: 1)),
+    imageUrl: 'https://i.ibb.co/Jk8FMMp/unsplash-Oqtaf-YT5k-Tw.jpg',
+    description: '''Please excuse the interruption.  
+Due to Google's efforts to maintain a “safe ads ecosystem” for its advertisers, publishers and users from fraud and bad experiences, Google has placed restrictions on our ad serving that limit our ability to provide free VPN services. 
+Regrettably, this is beyond our control.  
+To continue to enjoy ForestVPN without interruptions, please upgrade to our Premium version.''',
+  ),Article(
+    id: '1108389a-b3db-11ec-b909-0242ac120002',
+    title: 'We are processing your request...',
+    publicationDate: DateTime.now().subtract(const Duration(days: 1)),
+    imageUrl: 'https://i.ibb.co/Jk8FMMp/unsplash-Oqtaf-YT5k-Tw.jpg',
+    description: '''Please excuse the interruption.  
+Due to Google's efforts to maintain a “safe ads ecosystem” for its advertisers, publishers and users from fraud and bad experiences, Google has placed restrictions on our ad serving that limit our ability to provide free VPN services. 
+Regrettably, this is beyond our control.  
+To continue to enjoy ForestVPN without interruptions, please upgrade to our Premium version.''',
+  ),Article(
+    id: '1108389a-b3db-11ec-b909-0242ac120002',
+    title: 'We are processing your request...',
+    publicationDate: DateTime.now().subtract(const Duration(days: 1)),
+    imageUrl: 'https://i.ibb.co/Jk8FMMp/unsplash-Oqtaf-YT5k-Tw.jpg',
+    description: '''Please excuse the interruption.  
+Due to Google's efforts to maintain a “safe ads ecosystem” for its advertisers, publishers and users from fraud and bad experiences, Google has placed restrictions on our ad serving that limit our ability to provide free VPN services. 
+Regrettably, this is beyond our control.  
+To continue to enjoy ForestVPN without interruptions, please upgrade to our Premium version.''',
+  ),Article(
+    id: '1108389a-b3db-11ec-b909-0242ac120002',
+    title: 'We are processing your request...',
+    publicationDate: DateTime.now().subtract(const Duration(days: 1)),
+    imageUrl: 'https://i.ibb.co/Jk8FMMp/unsplash-Oqtaf-YT5k-Tw.jpg',
+    description: '''Please excuse the interruption.  
+Due to Google's efforts to maintain a “safe ads ecosystem” for its advertisers, publishers and users from fraud and bad experiences, Google has placed restrictions on our ad serving that limit our ability to provide free VPN services. 
+Regrettably, this is beyond our control.  
+To continue to enjoy ForestVPN without interruptions, please upgrade to our Premium version.''',
+  ),Article(
+    id: '1108389a-b3db-11ec-b909-0242ac120002',
+    title: 'We are processing your request...',
+    publicationDate: DateTime.now().subtract(const Duration(days: 1)),
+    imageUrl: 'https://i.ibb.co/Jk8FMMp/unsplash-Oqtaf-YT5k-Tw.jpg',
+    description: '''Please excuse the interruption.  
+Due to Google's efforts to maintain a “safe ads ecosystem” for its advertisers, publishers and users from fraud and bad experiences, Google has placed restrictions on our ad serving that limit our ability to provide free VPN services. 
+Regrettably, this is beyond our control.  
+To continue to enjoy ForestVPN without interruptions, please upgrade to our Premium version.''',
+  ),Article(
+    id: '1108389a-b3db-11ec-b909-0242ac120002',
+    title: 'We are processing your request...',
+    publicationDate: DateTime.now().subtract(const Duration(days: 1)),
+    imageUrl: 'https://i.ibb.co/Jk8FMMp/unsplash-Oqtaf-YT5k-Tw.jpg',
+    description: '''Please excuse the interruption.  
+Due to Google's efforts to maintain a “safe ads ecosystem” for its advertisers, publishers and users from fraud and bad experiences, Google has placed restrictions on our ad serving that limit our ability to provide free VPN services. 
+Regrettably, this is beyond our control.  
+To continue to enjoy ForestVPN without interruptions, please upgrade to our Premium version.''',
+  ),Article(
+    id: '1108389a-b3db-11ec-b909-0242ac120002',
+    title: 'We are processing your request...',
+    publicationDate: DateTime.now().subtract(const Duration(days: 1)),
+    imageUrl: 'https://i.ibb.co/Jk8FMMp/unsplash-Oqtaf-YT5k-Tw.jpg',
+    description: '''Please excuse the interruption.  
+Due to Google's efforts to maintain a “safe ads ecosystem” for its advertisers, publishers and users from fraud and bad experiences, Google has placed restrictions on our ad serving that limit our ability to provide free VPN services. 
+Regrettably, this is beyond our control.  
+To continue to enjoy ForestVPN without interruptions, please upgrade to our Premium version.''',
+  ),Article(
+    id: '1108389a-b3db-11ec-b909-0242ac120002',
+    title: 'We are processing your request...',
+    publicationDate: DateTime.now().subtract(const Duration(days: 1)),
+    imageUrl: 'https://i.ibb.co/Jk8FMMp/unsplash-Oqtaf-YT5k-Tw.jpg',
+    description: '''Please excuse the interruption.  
+Due to Google's efforts to maintain a “safe ads ecosystem” for its advertisers, publishers and users from fraud and bad experiences, Google has placed restrictions on our ad serving that limit our ability to provide free VPN services. 
+Regrettably, this is beyond our control.  
+To continue to enjoy ForestVPN without interruptions, please upgrade to our Premium version.''',
+  ),
+
+
+
   Article(
     id: '0e8dba30-b3dc-11ec-b909-0242ac120002',
     title: 'What is Lorem Ipsum...',
